@@ -34,6 +34,16 @@
   color: #61dafb;
 }
 
+.done {
+  color: red;
+  text-decoration: line-through;
+}
+
+.undone {
+  color: #61DAFB;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
