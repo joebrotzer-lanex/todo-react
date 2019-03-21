@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+export {todoItems};
 
 var todoItems = [];
 
@@ -37,7 +38,7 @@ class TodoListItem extends React.Component {
     return(
       <li className="list-group-item ">
         <div className={todoClass}>
-          <span className="glyphicon glyphicon-ok icon" aria-hidden="true" onClick={this.onClickDone}></span>
+          <span onClick={this.onClickDone}></span>
           {this.props.item.value}
           <button type="button" className="close" onClick={this.onClickClose}>&times;</button>
         </div>
@@ -61,6 +62,7 @@ class TodoForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
     var value = this.state.value;
+    this.setState({value: ""});
     this.props.addItem({value});
   }
 

@@ -43,6 +43,9 @@
   color: #61DAFB;
 }
 
+ul {
+  list-style: none;
+}
 
 @keyframes App-logo-spin {
   from {
