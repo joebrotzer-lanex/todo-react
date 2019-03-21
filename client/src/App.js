@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-export {todoItems};
 
 var todoItems = [];
+export {todoItems};
 
 class TodoList extends React.Component {
   render () {
